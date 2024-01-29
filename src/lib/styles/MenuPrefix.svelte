@@ -23,6 +23,6 @@
 		opacity: 1;
 	}
 	.transition {
-		opacity: opacity var(--transitionDuration) ms;
+		opacity: opacity var(--transitionDuration);
 	}
 </style>
