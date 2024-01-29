@@ -1,8 +1,9 @@
 <script lang="ts">
+	export let className: string;
 	export let rootStyles: string | null = null;
 </script>
 
-<span style={rootStyles}>
+<span style={rootStyles} class={className}>
 	<slot />
 </span>
 

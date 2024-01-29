@@ -1,11 +1,12 @@
 <script lang="ts">
+	export let className: string;
 	export let firstLevel = false;
 	export let collapsed = false;
 	export let rtl = false;
 	export let rootStyles: string | null = null;
 </script>
 
-<span style={rootStyles} class:transition={true} class:fc={firstLevel && collapsed} class:rtl>
+<span style={rootStyles} class={className} class:transition={true} class:fc={firstLevel && collapsed} class:rtl>
 	<slot />
 </span>
 

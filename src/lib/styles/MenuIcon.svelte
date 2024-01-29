@@ -1,9 +1,10 @@
 <script lang="ts">
 	export let rtl = false;
 	export let rootStyles: string | null = null;
+	export let className: string;
 </script>
 
-<span style={rootStyles} class:rtl>
+<span style={rootStyles} class:rtl class={className}>
 	<slot />
 </span>
 

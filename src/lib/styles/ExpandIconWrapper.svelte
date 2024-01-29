@@ -3,9 +3,10 @@
 	export let collasped = false;
 	export let level: number | undefined = undefined;
 	export let rtl = false;
+	export let className: string;
 </script>
 
-<span style={rootStyles} class:collapsed={collasped && level === 0} class:rtl>
+<span style={rootStyles} class={className} class:collapsed={collasped && level === 0} class:rtl>
 	<slot />
 </span>
 

@@ -1,11 +1,12 @@
 <script lang="ts">
+	export let className: string;
 	export let collapsed = false;
 	export let firstLevel = false;
 	export let rootStyles: string | null = null;
 	$: fc = firstLevel && collapsed;
 </script>
 
-<span style={rootStyles} class:fc>
+<span style={rootStyles} class:fc class={className}>
 	<slot />
 </span>
 

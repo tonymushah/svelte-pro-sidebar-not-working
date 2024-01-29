@@ -1,4 +1,8 @@
-<span>
+<script lang="ts">
+	export let className: string;
+</script>
+
+<span class={className}>
 	<slot />
 </span>
 

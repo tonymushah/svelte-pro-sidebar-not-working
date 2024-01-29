@@ -2,9 +2,10 @@
 	export let open: boolean = false;
 	export let rtl: boolean = false;
 	export let style: string | null = null;
+	export let className: string;
 </script>
 
-<span class:rtl class:open {style}>
+<span class:rtl class={className} class:open {style}>
 	<slot />
 </span>
 
